@@ -1,0 +1,105 @@
+:root{
+    --bg-assine-as: #282828;
+    --bg-planos-as:#160a2b;
+    --bg-produtos:#a5a5a5;
+    --laranja-carregaro: #ffa500;
+    --laranja-descarregado:rgba(255, 166, 0, 0.651);
+}
+body{background-color: #a5a5a5; font-weight: bold; font-family: sans-serif;}
+hr{width: 100px; display: flex; justify-content: center;}
+.espacamento, .espacamento-superior{width: 100%;height: 30px;margin:10px 0;}
+section h1{padding-top: 100px; padding-bottom: 30px; border-top: 1px solid var(--laranja-carregaro); border-radius: 20px;}
+
+#menu-desktop li a:hover{ border-bottom: 3px solid orange; transition: .5s all ease-in-out;}
+
+/* carrocell */
+.carousel-caption{ display: flex; flex-direction: column;align-items: center;justify-content: center;}
+.carousel-caption h2{ color: var(--laranja-carregaro); font-weight:bold; text-shadow: 0px 1px 2px black;}
+.carousel-item img{ max-width: 100%; height: 600px;}
+.btn-slide{z-index: 0; height: 100%;}
+#btn-carrusel a{color: rgba(30, 210, 180, 0.692);}
+#btn-carrusel a:hover{ border-bottom: 2px solid chocolate;border-right: 2px solid chocolate; transition: .3s all ease-out;
+    border-top: 2px solid #111 ;border-left: 2px solid #111;color: #eee; background-color: #222; padding: 10px;}
+
+/* Intro */
+.section-intro{ width: 100%; display: flex; flex-direction: row; align-items: center; height:auto; text-align: center;}
+
+.intro-conteiner{  width: 100%; height: auto; height: 300px;  display: flex;  flex-direction: column; align-items: center;
+     justify-content: center; color: var(--laranja-carregaro);  background-color: var(--bg-assine-as);
+    background-image: url('../_imagens/simple\ 3.jpg'); background-repeat: no-repeat; background-size:cover; 
+    background-blend-mode:darken; }
+
+.texto-intro a{ font-size: 1rem; padding: 5px 100px; border: 1px solid var(--laranja-carregaro);}
+.intro-icones { width: auto; height: 200px; margin: 10px; display: flex; flex-direction: row; flex-wrap: wrap;}
+.icone-intro{margin: 0 10px;}
+
+
+/* Sobre-about */
+.section-sobre{ width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.conteiner-sobre{ display: flex; width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; 
+    justify-content:space-around; align-items: center; text-align: center;}
+.sobre-conteiner{ display: flex; flex-direction: column; width: 450px; margin: 20px; height:auto;}
+.conteiner-sobre{background-color: #160a2b62; background-image: url('../_imagens/call\ center.webp'); background-repeat: no-repeat;
+    background-size: cover; background-blend-mode:hue;}
+
+.sobre h2{ text-align: center; font-size: 14pt; font-family: cursive, sans-serif; color: chocolate;}
+.sobre-descricao{ display: flex; flex-direction: row; flex-wrap: wrap; align-items: center;}
+.sobre-texto{width: 200px; height: auto; margin: 10px;}
+.sobre-descricao p{text-align: justify; font-size: smaller; font-family: sans-serif;color: azure;}
+.imag{ width: 200px;height: 200px; margin: 10px; box-shadow: 0px 1px 5px ; border-radius: 40%;}
+
+/* Recursos */
+.section-recurso{width: 100%; padding-top: 50px;display: flex; background-blend-mode:darken ;}
+.recursos-conteiner{display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;align-items: center;
+ height: auto; max-height: max-content; padding-top:0px;}
+.section-recursos h1{text-align: center; padding-top: 100px;}
+.recurso{ width: 200px; height: 180px; margin: 10px;; border-radius: 30px;  box-shadow: 0px 0px 1px #282828; padding: 20px 15px; scale:initial(1.4s);}
+.recurso p{ font-size: 10pt; font-family: sans-serif; font-weight: normal; text-align: center;}
+
+/* Planos de Assinaturas */
+.planos-assinaturas h1,h3{ text-align: center;}
+.planos-assinaturas{width: 100%; display: flex; flex-direction: column; justify-content: center;}
+.planos-conteiner{ display: flex; flex-direction: row; flex-wrap: wrap;justify-content: space-around; align-items: center; flex-wrap: wrap;}
+.plano{width: auto; display: flex; flex-direction: column; justify-content:center; border-radius: 10px;}
+.plano h3{ font-family: cursive,sans-serif;}
+
+.plano-text{width: 250px;max-width: max-content; height:auto; max-height: max-content;padding: 10px; text-align: justify;margin-left: 0px;}
+.plano-text p{ font-size: 10pt; text-align: center;border: 1px dotted chocolate; padding: 10px;}
+.plano-text caption{color: red;}
+.plano button{ width: 250px; margin: 10px; margin-left: 0px;}
+
+.assinaturas-conteiner{display: flex;align-items: center; justify-content: center; width: auto; background-image: url('../_icones/img-fones-phone.jpeg');
+    background-position: 1vh; background-repeat: no-repeat; background-size: cover; background-blend-mode:overlay;}
+.assinatura-text{ width: auto; max-width: 350px; margin: 10px; color: var(--laranja-carregaro); }
+.assinatura-text p{text-align: center; font-family:cursive, sans-serif; font-size: 11pt; color: #fff;}
+.assinatura-form{width: 350px; display: flex; align-items: center;flex-direction: row; justify-content: center; margin: 10px;
+    border-radius: 7px; background-color: #111;}
+.assinatura-form button{width: 90px; height:35px; padding: 5px;margin: 0px; border-color: #ffa500;}
+.assinatura-form button:hover{ border-bottom: 2px solid chocolate;border-right: 2px solid chocolate; transition: .3s all ease-out;
+    border-top: 2px solid #111 ;border-left: 2px solid #111;color: rgb(20, 163, 207); background-color: rgb(138, 34, 34); padding: 10px;}
+.assinatura-form input{width: 260px; border-radius: 7px; height: 35px; padding: 5px; margin: 0px; border:transparent;}
+
+footer{width: 100%; margin-bottom: 0px;padding-bottom: 0px;}
+.rodape{width: 100%; background-color:var(--bg-assine-as) ; margin-bottom: 0; }
+.rodape-conteiner p{ color: #fff; text-align: center; font-size: 10pt; font-family: sans-serif; height: 40px; padding: 0px;font-weight: normal;}
+
+
+/* Images bacground index */
+/* Visão */
+#imag-visao{ background-image: url('../_icones/WhatsApp\ Image\ 2023-01-04\ at\ 10.06.18.jpeg'); background-repeat: no-repeat; background-size: cover;}
+/* Valores */
+#imag-valores{ background-image: url('../_icones/WhatsApp\ Image\ 2023-01-04\ at\ 10.06.18.jpeg'); background-repeat: no-repeat; background-size: cover;}
+
+/* ^Recursos */
+/* Controle de vendas */
+#recurso-1{ background-image: url('../_imagens/G.jpg'); background-repeat: no-repeat; background-size: cover;background-blend-mode: darken;}
+/* Produtos em stoque */
+#recurso-2{ background-image: url('../_imagens/equipament\ apple.jpg'); background-repeat: no-repeat; background-size: cover;background-blend-mode: darken;}
+/* Marcacoes de compra */
+#recurso-3{ background-image: url('../_imagens/iphone\ x.jfif'); background-repeat: no-repeat; background-size: cover;background-blend-mode: darken;}
+/* Delivery */
+#recurso-4{ background-image: url('../_imagens/simple\ 2.jfif'); background-repeat: no-repeat; background-size: cover;background-blend-mode: darken;}
+
+.recurso :hover{
+    transform:scale(1.0s);
+}
